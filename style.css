@@ -12,7 +12,6 @@ body {
 }
 
 .titlepost {
-  border: 8px solid black;
   text-align: center;
   margin-left: 500px;
   margin-right: 500px;
@@ -26,10 +25,16 @@ body {
   border-radius: 50px;
   margin-top: 50px;
   background-color: lemonchiffon;
+  padding: 20px;
 }
 
 .Gallery {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.image {
+  width: 350px;
+  height: 250px;
 }
