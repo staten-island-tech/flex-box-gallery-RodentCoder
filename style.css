@@ -26,6 +26,7 @@ body {
   margin-top: 50px;
   background-color: lemonchiffon;
   padding: 20px;
+  box-shadow: 10px 10px 10px lightblue;
 }
 
 .Gallery {
