@@ -17,22 +17,41 @@ body {
   margin-right: 500px;
   margin-top: 50px;
   font-size: 200%;
+  animation: rotation 4s infinite linear;
 }
 
 .card {
-  margin-top: 50px;
-  margin: 2.5rem auto;
+  margin-top: 2.5rem;
+  margin-bottom: 10rem;
   border: 8px solid rgba(233, 160, 160, 0.878);
   text-align: center;
   border-radius: 50px;
   background-color: pink;
   padding: 20px;
   box-shadow: 10px 10px 10px lightcoral;
-  transition: all 0.3s;
+  transition: all 0.7s;
 }
 
 .card:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) rotate(360deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .Gallery {
