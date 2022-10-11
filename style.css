@@ -17,23 +17,41 @@ body {
   margin-right: 500px;
   margin-top: 50px;
   font-size: 200%;
-  animation: rotation 4s infinite linear;
+  animation: rotation 2s infinite linear;
+}
+
+.Gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
   margin-top: 2.5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   border: 8px solid rgba(233, 160, 160, 0.878);
   text-align: center;
   border-radius: 50px;
   background-color: pink;
   padding: 20px;
   box-shadow: 10px 10px 10px lightcoral;
-  transition: all 0.7s;
+  transition: all 1s;
+}
+
+.image {
+  width: 350px;
+  height: 250px;
+}
+
+.link {
+  color: blue;
 }
 
 .card:hover {
   transform: scale(1.5) rotate(360deg);
+  animation: fade 1s;
 }
 
 @keyframes rotation {
@@ -54,15 +72,14 @@ body {
   }
 }
 
-.Gallery {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.image {
-  width: 350px;
-  height: 250px;
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
