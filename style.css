@@ -28,6 +28,13 @@ body {
   flex-wrap: wrap;
 }
 
+.image {
+  width: 350px;
+  height: 250px;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+
 .card {
   margin-top: 2.5rem;
   margin-bottom: 5rem;
@@ -38,19 +45,13 @@ body {
   padding: 20px;
   box-shadow: 10px 10px 10px lightcoral;
   transition: all 1s;
-  filter: grayscale(100%);
-}
-
-.image {
-  width: 350px;
-  height: 250px;
 }
 
 .link {
   color: blue;
 }
 
-.card:hover {
+.image:hover {
   filter: grayscale(0);
 }
 .cc:hover {
@@ -60,10 +61,6 @@ body {
 .ccw:hover {
   transform: scale(1.5) rotate(-360deg);
   animation: fade 1s;
-}
-
-.flip:hover {
-  transform: scale(1.5);
 }
 
 @keyframes rotation {
