@@ -34,7 +34,6 @@ body {
   width: 350px;
   height: 250px;
   filter: grayscale(100%);
-  transition: all 1s;
 }
 
 .card {
@@ -51,6 +50,10 @@ body {
 
 .link {
   color: blue;
+}
+
+.titlepost:hover {
+  transform: scale(1.5);
 }
 
 .image:hover {
@@ -92,5 +95,12 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 500px);
+ {
+  .Gallery {
+    flex-direction: column;
   }
 }
