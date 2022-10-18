@@ -10,13 +10,12 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background-image: url(https://images5.alphacoders.com/116/1168976.png);
   background-size: cover;
+  background-position: center;
 }
 
 .titlepost {
-  text-align: center;
-  margin-left: 500px;
-  margin-right: 500px;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
   font-size: 200%;
   animation: rotation 2s infinite linear;
   color: lightgreen;
@@ -98,9 +97,16 @@ body {
   }
 }
 
-@media screen and (min-width: 500px);
- {
+@media screen and {
+}
+
+@media screen and (max-width: 1080px) {
   .Gallery {
     flex-direction: column;
+  }
+  body {
+    background-image: url(https://images.wallpapersden.com/image/download/ultrakill-hd-heaven-sent_bWtmZm6UmZqaraWkpJRmbmdlrWZlbWU.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }
