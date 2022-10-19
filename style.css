@@ -38,6 +38,8 @@ body {
 .card {
   margin-top: 2.5rem;
   margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border: 8px solid rgba(218, 95, 95, 0.878);
   text-align: center;
   border-radius: 50px;
@@ -97,12 +99,22 @@ body {
   }
 }
 
-@media screen and {
+@media screen and (max-width: 100px) {
+  .Gallery {
+    width: 70% auto;
+  }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1235px) {
+  .Gallery {
+    width: 50% auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .Gallery {
     flex-direction: column;
+    width: auto;
   }
   body {
     background-image: url(https://images.wallpapersden.com/image/download/ultrakill-hd-heaven-sent_bWtmZm6UmZqaraWkpJRmbmdlrWZlbWU.jpg);
