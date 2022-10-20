@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -61,12 +62,16 @@ body {
   filter: grayscale(0);
 }
 .cc:hover {
-  transform: scale(1.5) rotate(360deg);
+  transform: scale(1.2) rotate(360deg);
   animation: fade 1s;
 }
 .ccw:hover {
-  transform: scale(1.5) rotate(-360deg);
+  transform: scale(1.2) rotate(-360deg);
   animation: fade 1s;
+}
+
+.yes {
+  margin-bottom: 10rem;
 }
 
 @keyframes rotation {
@@ -99,7 +104,7 @@ body {
   }
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1400px) {
   .Gallery {
     width: 70% auto;
   }
@@ -115,6 +120,9 @@ body {
   .Gallery {
     flex-direction: column;
     width: auto;
+  }
+  .titlepost {
+    text-align: center;
   }
   body {
     background-image: url(https://images.wallpapersden.com/image/download/ultrakill-hd-heaven-sent_bWtmZm6UmZqaraWkpJRmbmdlrWZlbWU.jpg);
